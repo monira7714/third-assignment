@@ -23,7 +23,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-
+                        'grey': 'rgba(18,18,18,0.60)',
+                        'orange': '#F85559'
                     }
                 }
             }
@@ -37,15 +38,15 @@
             font-family: 'Lato', sans-serif;
         }
 
-        /* .banner-bg{
-            background-color: linear-gradient(to right, rgb(18, 18, 18),0%,rgb(18, 18, 18),100%);
-        } */
+        .grey-text {
+            color: rgba(18, 18, 18, 0.60);
+        }
     </style>
 </head>
 
 <body class="font-lato">
     <header class="container mx-auto">
-        <nav class="lg:mx-28 mx-5 lg:bg-[#F85559] py-2 rounded-full lg:mt-16  lg:text-white">
+        <nav class="lg:mx-28 md:mx-12 mx-8 lg:bg-[#F85559] md:bg-[#F85559] py-2 rounded-full lg:mt-16 md:mt-8 lg:text-white">
             <div class="navbar justify-center">
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-base text-xs ">
@@ -59,10 +60,10 @@
                     <a class="btn btn-ghost normal-case text-xl"><img class="w-1/4" src="images/logo.png">Fruit
                         Burst</a>
                 </div>
-                <div class="navbar-end invisible lg:visible">
+                <div class="navbar-end invisible lg:visible md:visible">
                     <div class="form-control pr-4">
                         <input type="text" placeholder="Search"
-                            class="input input-bordered w-24 md:w-auto lg:rounded-full">
+                            class="input input-bordered w-24 md:w-auto lg:rounded-full md:rounded-full">
                     </div>
                 </div>
                 <div class="dropdown">
@@ -86,7 +87,7 @@
         </nav>
         <!-- slider -->
         <div class="relative mb-20">
-            <div class="carousel lg:w-[1040px] w-[380px] lg:mx-28 mx-6 lg:mt-6  pt-10 rounded-xl">
+            <div class="carousel lg:w-[1040px] md:w-[680px] w-[380px] lg:mx-28 md:mx-12 mx-6 lg:mt-6 pt-10 rounded-xl">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="hero min-h-screen pt-0"
@@ -95,9 +96,8 @@
                         </div>
                         <div class="hero-content text-center">
                             <div class="max-w-md text-white -mt-40">
-                                <h1 class="mt-10 mb-5 lg:text-5xl text-4xl font-extrabold leading-tight">Exotic tastes at your
-
-                                    <br>doorstep</h1>
+                                <h1 class="mt-10 mb-5 lg:text-5xl text-4xl font-extrabold leading-tight">Exotic tastes at your <br>doorstep
+                                </h1>
                                 <p class="mb-5 text-sm font-light">We supply highly quality organic products</p>
                                 <button class="btn text-white border-none capitalize bg-[#F85559]">Shop Now</button>
                             </div>
@@ -121,7 +121,8 @@
                         <div class="hero-content text-center">
                             <div class="max-w-md text-white -mt-40">
                                 <h1 class="mb-5 text-5xl font-extrabold leading-tight">Exotic tastes at your
-                                    <br>doorstep</h1>
+                                    <br>doorstep
+                                </h1>
                                 <p class="mb-5 text-sm font-light">We supply highly quality organic products</p>
                                 <button class="btn text-white border-none bg-[#F85559]">Shop Now</button>
                             </div>
@@ -138,13 +139,15 @@
                 </div>
                 <!-- slide 3 -->
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div class="hero min-h-screen pt-0" style="background-image: url('images/banner3.png'); background-repeat: no-repeat; background-size: cover;">
+                    <div class="hero min-h-screen pt-0"
+                        style="background-image: url('images/banner3.png'); background-repeat: no-repeat; background-size: cover;">
                         <div class="hero-overlay bg-opacity-50 ">
                         </div>
                         <div class="hero-content text-center">
                             <div class="max-w-md text-white -mt-40">
                                 <h1 class="mb-5 text-5xl font-extrabold leading-tight">Exotic tastes at your
-                                    <br>doorstep</h1>
+                                    <br>doorstep
+                                </h1>
                                 <p class="mb-5 text-sm font-light">We supply highly quality organic products</p>
                                 <button class="btn text-white border-none bg-[#F85559]">Shop Now</button>
                             </div>
@@ -161,13 +164,15 @@
                 </div>
                 <!-- slide 4 -->
                 <div id="slide4" class="carousel-item relative w-full">
-                    <div class="hero min-h-screen pt-0" style="background-image: url('images/banner4.png');background-repeat: no-repeat; background-size: cover;">
+                    <div class="hero min-h-screen pt-0"
+                        style="background-image: url('images/banner4.png');background-repeat: no-repeat; background-size: cover;">
                         <div class="hero-overlay bg-opacity-50 ">
                         </div>
                         <div class="hero-content text-center">
                             <div class="max-w-md text-white -mt-40">
                                 <h1 class="mb-5 text-5xl font-extrabold leading-tight">Exotic tastes at your
-                                    <br>doorstep</h1>
+                                    <br>doorstep
+                                </h1>
                                 <p class="mb-5 text-sm font-light">We supply highly quality organic products</p>
                                 <button class="btn text-white border-none bg-[#F85559]">Shop Now</button>
                             </div>
@@ -184,7 +189,8 @@
                 </div>
             </div>
             <!-- badge -->
-            <div class="shadow-lg flex justify-center items-center gap-12 py-6 px-12 absolute -bottom-10 right-72 bg-white rounded-md invisible lg:visible ">
+            <div class="shadow-lg flex justify-center items-center gap-12 py-6 px-12 absolute -bottom-10
+            right-72 bg-white rounded-md invisible lg:visible">
                 <div class="flex flex-col gap-2 justify-center items-center">
                     <img width="80px" height="70px" src="images/fruit1.png">
                     <h6 class="text-base font-medium text-center">Grape</h6>
@@ -210,51 +216,143 @@
     </header>
     <main>
         <!-- deal of the day -->
-        <section class="container mx-auto mt-48">
-            <div class="flex">
-                <div>
-                    <h2 class="font-extrabold text-4xl">Deal of the day</h2>
-                    <p class="text-sm font-normal text-[#121212]">Buy the most exquisite,classical and handpicked fresh fruits at EXCLUSIVE offer price. hurry up! It is available only for limited time.</p>
+        <section class="container mx-auto lg:mt-48">
+            <div class="flex lg:flex-row flex-col justify-around items-center">
+                <div class="text-center lg:text-left">
+                    <h2 class="font-extrabold text-4xl pb-5">Deal of the day</h2>
+                    <p class="text-sm font-normal grey-text pb-5 leading-normal">Buy the most exquisite,classical and handpicked fresh
+                        fruits at EXCLUSIVE <br> offer price. hurry up! It is available only for limited time.</p>
                 </div>
-                <div>
+                <!-- countdown -->
+                <div class="mt-10 lg:mt-4">
                     <div class="flex gap-5">
-                        <div>
-                          <span class="countdown font-mono text-4xl">
-                            <span style="--value:15;"></span>
-                          </span>
-                          days
-                        </div> 
-                        <div>
-                          <span class="countdown font-mono text-4xl">
-                            <span style="--value:10;"></span>
-                          </span>
-                          hours
-                        </div> 
-                        <div>
-                          <span class="countdown font-mono text-4xl">
-                            <span style="--value:24;"></span>
-                          </span>
-                          min
-                        </div> 
-                        <div>
-                          <span class="countdown font-mono text-4xl">
-                            <span style="--value:6;"></span>
-                          </span>
-                          sec
+                        <div class="flex flex-col justify-start items-center gap-3">
+                            <span class="countdown font-extrabold text-4xl flex gap-3 items-center">
+                                <span style="--value:29;"></span><img class="w-6 h-6" src="images/colon.png" alt="">
+                            </span>
+                            <h4 class="text-xs grey-text text-center pr-5">Days</h4>
                         </div>
-                      </div>
+                        <div class="flex flex-col justify-start items-center gap-3">
+                            <span class="countdown font-extrabold text-4xl flex gap-3 items-center">
+                                <span style="--value:15;"></span><img class="w-6 h-6" src="images/colon.png" alt="">
+                            </span>
+                            <h4 class="text-xs grey-text font-mono text-center pr-5">Hours</h4>
+                        </div>
+                        <div class="flex flex-col justify-start items-center gap-3">
+                            <span class="countdown font-extrabold text-4xl gap-3 flex items-center">
+                                <span style="--value:25;"></span><img class="w-6 h-6" src="images/colon.png" alt="">
+                            </span>
+                            <h4 class="text-xs grey-text text-center pr-5">Minutes</h4>
+                        </div>
+                        <div class="flex flex-col justify-start items-center gap-3">
+                            <span class="countdown font-extrabold text-4xl flex items-center">
+                                <span style="--value:08;"></span>
+                            </span>
+                            <h4 class="text-xs grey-text text-center pr-5">Seconds</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- card container -->
-            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+            <div class="grid lg:grid-cols-4 lg:mx-24 md:mx-16 mx-8 md:grid-cols-2 grid-cols-1 lg:mt-12 mt-8 justify-evenly gap-4">
                 <!-- first card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card bg-base-100 rounded-md shadow-xl flex flex-col gap-6 justify-center items-center pt-4" style="border: 1px solid rgba(18, 18, 18, 0.10);">
+                    <figure><img src="images/fruit6.png" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title font-bold text-xl">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="grey-text text-xs text-center">Apple</p>
+                        <img src="images/rating.png" alt="">
+
+                        <!-- Details modal -->
+
+                        <button class="btn btn-active btn-link capitalize text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal mt-4">
+                            <form method="dialog" class="modal-box text-center flex flex-col items-center gap-4">
+                                <img src="images/fruit6.png" />
+                                <h3 class="text-2xl font-extrabold">Apples</h3>
+                                <p class="grey-text text-xs font-medium">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                                <img src="images/rating.png" alt="">
+                                <div class="modal-action">
+                                    <button class="btn border-[#F85559] text-[#F85559]">Close</button>
+                                    <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
                     </div>
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                  </div>
+                </div>
+                <!-- second card -->
+                <div class="card bg-base-100 rounded-md shadow-xl flex flex-col gap-6 justify-center items-center pt-4" style="border: 1px solid rgba(18, 18, 18, 0.10);">
+                    <figure><img src="images/fruit7.png" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title font-bold text-xl">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="grey-text text-xs text-center">Orange</p>
+                        <img src="images/rating.png" alt="">
+                        <!-- Details modal -->
+                        <button class="btn btn-active btn-link capitalize text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
+                        <dialog id="my_modal_2" class="modal">
+                            <form method="dialog" class="modal-box text-center flex flex-col items-center gap-4">
+                                <img src="images/fruit7.png" />
+                                <h3 class="text-2xl font-extrabold">Orange</h3>
+                                <p class="grey-text font-xs font-medium">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                                <img src="images/rating.png" alt="">
+                                <div class="modal-action">
+                                    <button class="btn border-[#F85559] text-[#F85559]">Close</button>
+                                    <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card bg-base-100 rounded-md shadow-xl flex flex-col gap-6 justify-center items-center pt-4" style="border: 1px solid rgba(18, 18, 18, 0.10);">
+                    <figure><img src="images/fruit8.png" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title font-bold text-xl">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="grey-text text-xs text-center">Red Dragon</p>
+                        <img src="images/rating.png" alt="">
+                        <!-- Details modal -->
+                        <button class="btn btn-active btn-link capitalize text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+                        <dialog id="my_modal_3" class="modal">
+                            <form method="dialog" class="modal-box text-center flex flex-col items-center gap-4">
+                                <img src="images/fruit8.png" />
+                                <h3 class="font-extrabold text-2xl">Red Dragon</h3>
+                                <p class="grey-text font-xs font-medium">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                                <img src="images/rating.png" alt="">
+                                <div class="modal-action">
+                                    <button class="btn btn-outline border-[#F85559] text-[#F85559]">Close</button>
+                                    <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <!-- fourth card -->
+                <div class="card bg-base-100 rounded-md shadow-xl flex flex-col gap-6 justify-center items-center pt-4" style="border: 1px solid rgba(18, 18, 18, 0.10);">
+                    <figure><img src="images/fruit9.png" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title font-bold text-xl">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="grey-text text-xs text-center">Banana</p>
+                        <img src="images/rating.png" alt="">
+                        <!-- Details modal -->
+                        <button class="btn btn-active btn-link capitalize text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+                        <dialog id="my_modal_4" class="modal">
+                            <form method="dialog" class="modal-box text-center flex flex-col items-center gap-4">
+                                <img src="images/fruit9.png" />
+                                <h3 class="text-2xl font-extrabold">Banana</h3>
+                                <p class="grey-text font-xs font-medium">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                                <img src="images/rating.png" alt="">
+                                <div class="modal-action">
+                                    <button class="btn btn-outline border-[#F85559] text-[#F85559]">Close</button>
+                                    <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

@@ -41,6 +41,15 @@
         .grey-text {
             color: rgba(18, 18, 18, 0.60);
         }
+
+        .icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .icon-bg {
+            background-color: rgba(18, 18, 18, 0.10);
+        }
     </style>
 </head>
 
@@ -108,10 +117,10 @@
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4"
                             class="flex justify-center items-center rounded-full lg:w-16 lg:h-16 w-6 h-6 border-none bg-slate-900"><img
-                                class="lg:w-11 w-4 lg:h-11 h-4" src="images/less than.png"></a>
+                                class="lg:w-11 w-4 lg:h-11 h-4" src="icons/less than.png"></a>
                         <a href="#slide2"
                             class="flex justify-center items-center rounded-full lg:w-16 lg:h-16 w-6 h-6 border-none bg-slate-900"><img
-                                class="lg:w-11 w-4 lg:h-11 h-4" src="images/greater than.png"></a>
+                                class="lg:w-11 w-4 lg:h-11 h-4" src="icons/greater than.png"></a>
                     </div>
                 </div>
                 <!-- slide 2 -->
@@ -133,10 +142,10 @@
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1"
                             class="flex justify-center items-center rounded-full lg:w-16 lg:h-16 w-6 h-6 border-none bg-slate-900"><img
-                                class="lg:w-11 w-4 lg:h-11 h-4" src="images/less than.png"></a>
+                                class="lg:w-11 w-4 lg:h-11 h-4" src="icons/less than.png"></a>
                         <a href="#slide3"
                             class="flex justify-center items-center rounded-full lg:w-16 lg:h-16 w-6 h-6 border-none bg-slate-900"><img
-                                class="lg:w-11 w-4 lg:h-11 h-4" src="images/greater than.png"></a>
+                                class="lg:w-11 w-4 lg:h-11 h-4" src="icons/greater than.png"></a>
                     </div>
                 </div>
                 <!-- slide 3 -->
@@ -158,10 +167,10 @@
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2"
                             class="flex justify-center items-center rounded-full lg:w-16 lg:h-16 w-6 h-6 border-none bg-slate-900"><img
-                                class="lg:w-11 w-4 lg:h-11 h-4" src="images/less than.png"></a>
+                                class="lg:w-11 w-4 lg:h-11 h-4" src="icons/less than.png"></a>
                         <a href="#slide4"
                             class="flex justify-center items-center rounded-full lg:w-16 lg:h-16 w-6 h-6 border-none bg-slate-900"><img
-                                class="lg:w-11 w-4 lg:h-11 h-4" src="images/greater than.png"></a>
+                                class="lg:w-11 w-4 lg:h-11 h-4" src="icons/greater than.png"></a>
                     </div>
                 </div>
                 <!-- slide 4 -->
@@ -183,10 +192,10 @@
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3"
                             class="flex justify-center items-center rounded-full lg:w-16 lg:h-16 w-6 h-6 border-none bg-slate-900"><img
-                                class="lg:w-11 w-4 lg:h-11 h-4" src="images/less than.png"></a>
+                                class="lg:w-11 w-4 lg:h-11 h-4" src="icons/less than.png"></a>
                         <a href="#slide1"
                             class="flex justify-center items-center rounded-full lg:w-16 lg:h-16 w-6 h-6 border-none bg-slate-900"><img
-                                class="lg:w-11 w-4 lg:h-11 h-4" src="images/greater than.png"></a>
+                                class="lg:w-11 w-4 lg:h-11 h-4" src="icons/greater than.png"></a>
                     </div>
                 </div>
             </div>
@@ -231,19 +240,19 @@
                     <div class="flex gap-5">
                         <div class="flex flex-col justify-start items-center gap-3">
                             <span class="countdown font-extrabold text-4xl flex gap-3 items-center">
-                                <span style="--value:29;"></span><img class="w-6 h-6" src="images/colon.png" alt="">
+                                <span style="--value:29;"></span><img class="w-6 h-6" src="icons/colon.png" alt="">
                             </span>
                             <h4 class="text-xs grey-text text-center pr-5">Days</h4>
                         </div>
                         <div class="flex flex-col justify-start items-center gap-3">
                             <span class="countdown font-extrabold text-4xl flex gap-3 items-center">
-                                <span style="--value:15;"></span><img class="w-6 h-6" src="images/colon.png" alt="">
+                                <span style="--value:15;"></span><img class="w-6 h-6" src="icons/colon.png" alt="">
                             </span>
                             <h4 class="text-xs grey-text font-mono text-center pr-5">Hours</h4>
                         </div>
                         <div class="flex flex-col justify-start items-center gap-3">
                             <span class="countdown font-extrabold text-4xl gap-3 flex items-center">
-                                <span style="--value:25;"></span><img class="w-6 h-6" src="images/colon.png" alt="">
+                                <span style="--value:25;"></span><img class="w-6 h-6" src="icons/colon.png" alt="">
                             </span>
                             <h4 class="text-xs grey-text text-center pr-5">Minutes</h4>
                         </div>
@@ -377,15 +386,16 @@
                 <button class="btn capitalize bg-[#F85559] text-white">Shop All</button>
             </div>
         </section>
-        <section class="container text-white lg:mt-48 md:mt-24 mt-16">
-            <!-- meet the team section -->
+        <!-- meet the team section -->
+        <section class="container text-white mb-10 lg:mt-48 md:mt-24 mt-16">
             <div class="hero min-h-screen lg:mx-28 md:mx-12 mx-8 lg:w-[1040px] md:w-[680px] w-[380px]"
                 style="background-image: url(images/team.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center">
                     <div class="">
                         <h1 class="mb-5 pt-6 md:pt-12 text-4xl font-extrabold">Meet the team section</h1>
-                        <p class="mb-5 font-medium text-xs pb-8">Our team consists of four fruit expert who ensure the best fruit in terms of ripeness, grading and freshness</p>
+                        <p class="mb-5 font-medium text-xs pb-8">Our team consists of four fruit expert who ensure the
+                            best fruit in terms of ripeness, grading and freshness</p>
                         <!-- members -->
                         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-8">
                             <!-- member 1 -->
@@ -394,9 +404,9 @@
                                 <h3 class="text-xl font-bold">Awlad Hossain</h3>
                                 <p class="text-xs font-medium">Fruit Expert</p>
                                 <div class="flex gap-2">
-                                    <img src="images/facebook.png">
-                                    <img src="images/twitter.png" >
-                                    <img src="images/linkedin.png">
+                                    <img src="icons/facebook.png">
+                                    <img src="icons/twitter.png">
+                                    <img src="icons/linkedin.png">
                                 </div>
                             </div>
                             <!-- member 2 -->
@@ -405,9 +415,9 @@
                                 <h3 class="text-xl font-bold">Safia Chowdhury</h3>
                                 <p class="text-xs font-medium">Fruit Expert</p>
                                 <div class="flex gap-2">
-                                    <img src="images/facebook.png">
-                                    <img src="images/twitter.png" >
-                                    <img src="images/linkedin.png">
+                                    <img src="icons/facebook.png">
+                                    <img src="icons/twitter.png">
+                                    <img src="icons/linkedin.png">
                                 </div>
                             </div>
                             <!-- member 3 -->
@@ -416,9 +426,9 @@
                                 <h3 class="text-xl font-bold">Rakib Hossain</h3>
                                 <p class="text-xs font-medium">Fruit Expert</p>
                                 <div class="flex gap-2">
-                                    <img src="images/facebook.png">
-                                    <img src="images/twitter.png" >
-                                    <img src="images/linkedin.png">
+                                    <img src="icons/facebook.png">
+                                    <img src="icons/twitter.png">
+                                    <img src="icons/linkedin.png">
                                 </div>
                             </div>
                             <!-- member 24-->
@@ -427,9 +437,9 @@
                                 <h3 class="text-xl font-bold">Chaity</h3>
                                 <p class="text-xs font-medium">Fruit Expert</p>
                                 <div class="flex gap-2">
-                                    <img src="images/facebook.png">
-                                    <img src="images/twitter.png" >
-                                    <img src="images/linkedin.png">
+                                    <img src="icons/facebook.png">
+                                    <img src="icons/twitter.png">
+                                    <img src="icons/linkedin.png">
                                 </div>
                             </div>
                         </div>
@@ -437,8 +447,100 @@
                 </div>
             </div>
         </section>
+        <!-- Why choose us -->
+        <section
+            class="container mx-auto lg:mt-44 md:mt-24 mt-16 flex flex-col justify-center items-center gap-16 lg:-mb-96">
+            <div class="text-center">
+                <h3 class="text-4xl font-extrabold pb-4">Why Choose Us</h3>
+                <p class="grey-text text-xs">Among all the sellers, we offer the best reasonable price for fresh fruits
+                    with <br> the help of our as well as the following facilities and benefits. </p>
+            </div>
+            <div class="mx-auto ">
+                <div class="grid gap-4 justify-evenly items-center lg:grid-cols-3 grid-rows-3 ml-24 lg:flex-row">
+                    <div class="self-center grid lg:grid-rows-3 grid-col-1 gap-12 flex-grow card rounded-box">
+                        <div class="flex items-center lg:flex-row flex-col gap-6">
+                            <div class=" rounded-full"><img class="icon " src="icons/group.png" alt=""></div>
+                            <div class="lg:text-left text-center">
+                                <h5 class="text-xl font-extrabold">Dedicated Team</h5>
+                                <hr>
+                                <p class="grey-text text-xs font-medium ">We have hired a professional team of <br>fruit
+                                    experts who ensure the best fruit</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center lg:flex-row flex-col gap-6">
+                            <img class="icon" src="icons//love.png" alt="">
+                            <div class="lg:text-left text-center">
+                                <h5 class="text-xl font-extrabold">Fresh is Best</h5>
+                                <hr>
+                                <p class="grey-text text-xs font-medium ">We offer the freshest fruits as all the fruits
+                                    are<br> handpicked by farmers</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center lg:flex-row flex-col gap-6">
+                            <img class="icon" src="icons/group.png" alt="">
+                            <div class="lg:text-left text-center">
+                                <h5 class="text-xl font-extrabold">Gift Certificates</h5>
+                                <hr>
+                                <p class="grey-text text-xs font-medium ">We provide gift certificates to our loyal<br>
+                                    customers who regularly buy from us</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" self-center"><img class="lg:w-3/4 w-1/2"  src="images/whychoose1.png" alt=""></div>
+
+                    <div class=" self-center grid gap-12 flex-grow card rounded-box">
+                        <div class="flex items-center lg:flex-row flex-col-reverse gap-6 lg:text-right text-right">
+                            <div>
+                                <h5 class="text-xl font-extrabold">Integrated Supplier</h5>
+                                <hr>
+                                <p class="grey-text text-xs font-medium ">We have one of the best supplier who send<br>
+                                    our goods to you on time</p>
+                            </div>
+                            <img class="icon" src="icons//fruit.png" alt="">
+                        </div>
+                        <div class="flex items-center lg:flex-row flex-col-reverse gap-6 lg:text-right text-right">
+                            <div>
+                                <h5 class="text-xl font-extrabold">Sustainable Practice</h5>
+                                <hr>
+                                <p class="grey-text text-xs font-medium ">Our one of best feature is our sustainable
+                                    <br>practices which differ us from others.</p>
+                            </div>
+                            <img class="icon" src="icons//love.png" alt="">
+                        </div>
+                        <div class="flex items-center lg:flex-row flex-col-reverse gap-6 lg:text-right text-right">
+                            <div>
+                                <h5 class="text-xl font-extrabold">The Benefits Only</h5>
+                                <hr>
+                                <p class="grey-text text-xs font-medium ">You will only recieve benefits from us without
+                                    <br>any doubt as we serve quality.</p>
+                            </div>
+                            <img class="icon self-center" src="icons/group.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer
+        class="bg-black w-full mt-10 flex flex-col gap-10 justify-center items-center container mx-auto py-28">
+        <div class="flex items-center gap-4">
+            <img class="" src="images/logo.png" alt="">
+            <h3 class="text-white text-xl">Fruit Burst</h3>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-16 text-white font-normal text-xs text-align">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Shop</p>
+            <p>All Fruits</p>
+            <p>Support</p>
+            <p>My Account</p>
+        </div>
+        <div class="flex items-center gap-8">
+            <img src="icons/twitter 1.png"><img src="icons/facebook 1.png"><img src="icons/youtube.png"><img
+                src="icons/linkedin 1.png"><img src=""><img src="icons/apple 1.png">
+        </div>
+    </footer>
 </body>
 
 </html>
